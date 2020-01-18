@@ -16,6 +16,7 @@ public class Order
     private String id;
     private Date createdAt = new Date();
     private String customerId;
+    private OrderStatus status = OrderStatus.NEW;
     private List<OrderLine> orderLines = new ArrayList<>();
 
     @Data
