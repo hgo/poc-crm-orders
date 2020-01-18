@@ -12,4 +12,6 @@ public interface OrderMapper
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "status", ignore = true)
     Order map(OrderRequest request);
+
+    OrderCreated mapToEvent(Order order);
 }
