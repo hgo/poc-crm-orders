@@ -9,5 +9,4 @@ RUN mvn package
 FROM openjdk:8-jre-alpine
 WORKDIR /app
 COPY --from=MAVEN_BUILD /build/target/order-1.0.jar /app/
-COPY --from=MAVEN_BUILD /build/target/lib /app/lib
-ENTRYPOINT ["java", "-Djava.ext.dirs=lib","-jar", "order-1.0.jar"]
+ENTRYPOINT ["java", "-jar", "order-1.0.jar"]
