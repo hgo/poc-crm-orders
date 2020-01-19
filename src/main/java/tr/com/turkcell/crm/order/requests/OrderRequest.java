@@ -15,6 +15,7 @@ public class OrderRequest
     public static class OrderLine
     {
         private String offerName;
+        private String offerId;
         private List<OrderLineProperty> properties = new ArrayList<>();
     }
 

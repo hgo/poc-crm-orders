@@ -22,6 +22,7 @@ public class Order
     @Data
     public static class OrderLine
     {
+        private String offerId;
         private String offerName;
         private List<OrderLineProperty> properties = new ArrayList<>();
     }
