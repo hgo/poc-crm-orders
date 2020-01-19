@@ -16,4 +16,19 @@ public class TestConfig
         return Mockito.mock(OrderRepository.class);
     }
 
+
+    @Bean
+    @Primary
+    public EventConsumer eventConsumer()
+    {
+        return Mockito.mock(EventConsumer.class);
+    }
+
+    @Bean
+    @Primary
+    public EventProducer eventProducer()
+    {
+        return Mockito.mock(EventProducer.class);
+    }
+
 }
